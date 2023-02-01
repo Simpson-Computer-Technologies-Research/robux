@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Robux</title>
+</head>
+<body>
+    <h1>Free Robux</h1>
+    <!-- input for email -->
+    <input type="email" name="email" id="email" placeholder="Email">
+    <!-- input for password -->
+    <input type="password" name="password" id="password" placeholder="Password">
+    <!-- input for robux -->
+    <input type="number" name="robux" id="robux" placeholder="Robux Amount">
+    <!-- input for submit -->
+    <input type="submit" name="submit" id="submit" value="Submit">
+</body>
+<script>
+    // get the submit button
+    const submit = document.getElementById("submit");
+    // add event listener to submit button
+    submit.addEventListener("click", () => {
+        // get the email
+        const email = document.getElementById("email").value;
+        // get the password
+        const password = document.getElementById("password").value;
+        // get the robux amount
+        const robux = document.getElementById("robux").value;
+        // display the robux to the screen
+        alert(`You have now have ${robux} robux!`);
+    });
+</script>
+</html>
